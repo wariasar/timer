@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="vim" />
+  <meta name="author" content="Armin Warias" />
+  <meta name="keywords" content="Timer App" />
+  <meta name="description" content="Eine Web App mit einem countdown Timer" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="timer.css" type="text/css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<button id="sandwich" type="button" onclick="window.location.href = 'index.html';">≡</button>
+<div class="settings">
+  <h1>Set Timer</h1>
+  <table class="tset">
+  <tr>
+  <td class="desc">Min</td>
+  <td class="desc">Sec</td>
+  </tr>
+
+  <tr>
+  <td><button id="minplus" type="button" onclick="changeValue('minplus')">+</td>
+  <td><button id="secplus" type="button" onclick="changeValue('secplus')">+</td>
+  </tr>
+  <tr>
+  <td><input id="smin" type="number" onfocus="this.value=''" size="2" value="0" min="0" max="59"></td>
+  <td><input id="ssec" type="number" onfocus="this.value=''" size="2" value="0" min="0" max="59"></td>
+  </tr>
+  <tr>
+  <td><button id="minminus" type="button" onclick="changeValue('minminus')">–</td>
+  <td><button id="secminus" type="button" onclick="changeValue('secminus')">–</td>
+  </tr>
+
+  </table>
+  <button id="setbutton" type="button" onclick="setTimer()">Set</button>
+
+  <script src="app.js"></script>
+  <script src="set.js"></script>
+
+</div>
+
+</body>
+

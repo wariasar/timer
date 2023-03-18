@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="vim" />
+  <meta name="author" content="Armin Warias" />
+  <meta name="keywords" content="Timer App" />
+  <meta name="description" content="Eine Web App mit einem countdown Timer" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="timer.css" type="text/css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body id="site">
+
+<button id="sandwich" type="button" onclick="window.location.href = 'set.html';">≡</button>
+
+<div class="app">
+  <img class="sanduhr" src="timer.png">
+  <div id="timer">5∶00</div>
+  <button id="startbutton" type="button" onclick="initTimer()">Start</button>
+
+  <script src="./app.js"></script>
+  <script src="./timer.js"></script>
+</div>
+
+</body>
+
